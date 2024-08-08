@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>The-Radiant</title>
+  </head>
+  <body
+    class="bg-[#090d18] bg-eclips bg-no-repeat bg-left-top text-[#FFFFFF] m-0 p-0"
+  >
+    <nav
+      class="xl:bg-[#090d1844] bg-transparent py-2 xl:border-b-1 border-0 border-[#FFFFFF1A]"
+    >
+      <div class="container mx-auto">
+        <div class="navbar flex justify-center items-center bg-black-50">
+          <img
+            class="2xl:w-54 xl:border-b-0 border-b-1 border-[#FFFFFF1A] xl:w-32 xl:mx-0 me-auto"
+            src="./public/gallery/radiant-web-logo.png"
+          />
+          <div
+            id="buttons "
+            class="border-[#37DAE74D] border-1 xl:block hidden rounded w-56 me-4"
+          >
+            <button id="posiTive" class="bg-lightBlueR p-3">Collections</button>
+            <button id="negaTive" class="py-3 px-8">Wallet</button>
+          </div>
+          <div class="relative">
+            <input
+              type="search"
+              class="outline-none xl:block hidden ps-10 pe-2 bg-transparent border-1 border-lightBlueR rounded h-12 2xl:w-[600px]"
+            />
+            <img
+              class="absolute top-3 left-2 w-6 h-6"
+              src="./public/gallery/search-icon-logo.png"
+            />
+          </div>
+          <ul
+            class="text-sm font-medium hidden xl:flex justify-center items-center gap-4 ms-3"
+          >
+            <li class="cursor-pointer">Token</li>
+            <li class="cursor-pointer">Asset Swap</li>
+            <li class="greenblue cursor-pointer">Lend/Barrow</li>
+          </ul>
+          <div class="xl:flex hidden gap-4 sm:ms-4">
+            <img src="./public/gallery/customer-logo.png" />
+            <img src="./public/gallery/servvices-logo.png" />
+          </div>
+          <button
+            class="py-3 px-4 text-black xl:block hidden ms-4 bg-GreenBlueR rounded custom-button"
+          >
+            Connect Wallet
+          </button>
+          <img
+            src="./public/gallery/menubar-logo.png"
+            class="xl:hidden block w-10"
+            onclick="showSidebar()"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <!-- gap  -->
+
+    <nav
+      class="bg-[#090d18] py-6 fixed top-0 right-0 z-10 shadow-2xl border-1 border-e-0 border-t-0 border-[#FFFFFF1A] sm:w-[450px] w-full h-lvh drawer sideBar"
+    >
+      <div class="flex justify-center">
+        <img
+          onclick="closeSidebar()"
+          id="closebarIcon"
+          class="mb-5 pt-10 closeBar"
+          src="./public/gallery/closebar-icon.png"
+        />
+      </div>
+
+      <div
+        class="navbar flex flex-col justify-start items-center bg-black-50 ms-8"
+      >
+        <div class="relative">
+          <input
+            type="search"
+            class="outline-none ps-10 pe-2 bg-transparent border-1 border-lightBlueR rounded h-12 2xl:w-full"
+          />
+          <img
+            class="absolute top-3 left-2 w-6 h-6"
+            src="./public/gallery/search-icon-logo.png"
+          />
+        </div>
+        <div
+          id="buttons"
+          class="border-[#37DAE74D] mx-auto mt-5 border-1 rounded w-54"
+        >
+          <button id="posiTive1" class="bg-lightBlueR p-3">Collections</button>
+          <button id="negaTive1" class="py-3 px-7">Wallet</button>
+        </div>
+        <div class="flex justify-center items-center py-4 w-full">
+          <ul
+            class="text-sm font-medium flex justify-center items-center gap-4 ms-3"
+          >
+            <li class="cursor-pointer">Token</li>
+            <li class="cursor-pointer">Asset Swap</li>
+            <li class="greenblue cursor-pointer">Lend/Barrow</li>
+          </ul>
+        </div>
+        <div class="flex gap-4 mb-5">
+          <img src="./public/gallery/customer-logo.png" />
+          <img src="./public/gallery/servvices-logo.png" />
+        </div>
+        <button
+          class="py-3 px-4 mx-auto text-black content-center block bg-GreenBlueR rounded custom-button" 
+        >
+          Connect Wallet
+        </button>
+      </div>
+    </nav>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

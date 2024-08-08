@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #dcdcdc;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+.button-grediant {
+  background: linear-gradient(251.38deg, #00a868 0%, #00e0ff 99.76%);
+}
+
+.greenblue {
+  background: #a7cfdf;
+  background: linear-gradient(to right, #00e0ff 0%, #00a868 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sideBar {
+  display: none;
+}
+
+.closeBar {
+  display: block;
+}
