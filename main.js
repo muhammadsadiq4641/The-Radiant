@@ -46,11 +46,37 @@ function closeSidebar() {
 
 // custom buttons
 
-const custonBTN = document
-  .querySelector(".custom-button")
-  .addEventListener("click", openBTN);
+// const custonBTN = document
+//   .querySelector(".custom-button")
+//   .addEventListener("click", openBTN);
 
-const customNrm = document.querySelector(".custom-button");
 function openBTN() {
   document.querySelector(".custom-button").innerText = "clicked";
+}
+
+// const CustomBTN = document
+//   .getElementsByClassName("custom-button")
+//   .addEventListener("click", target());
+
+// for (let i = 0; i < CustomBTN.length; i++) {
+//   const element = array[i];
+//   {
+//     if (target.classList.contains("custom-button")) {
+//       function target() {
+//         CustomBTN.innerText = "clicked";
+//       }
+//     }
+//   }
+// }
+
+// kjhjkh
+
+function changeText() {
+  const CustomBTN = document.querySelectorAll(".custom-button");
+
+  for (let i = 0; i < CustomBTN.length; i++) {
+    console.log(" CustomBTN[i]", CustomBTN[i]);
+
+    // document.querySelector(".custom-button").innerText = "clicked";
+  }
 }
