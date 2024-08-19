@@ -50,9 +50,9 @@ function closeSidebar() {
 //   .querySelector(".custom-button")
 //   .addEventListener("click", openBTN);
 
-function openBTN() {
-  document.querySelector(".custom-button").innerText = "clicked";
-}
+// function openBTN() {
+//   document.querySelector(".custom-button").innerText = "clicked";
+// }
 
 // const CustomBTN = document
 //   .getElementsByClassName("custom-button")
@@ -71,12 +71,40 @@ function openBTN() {
 
 // kjhjkh
 
-function changeText() {
-  const CustomBTN = document.querySelectorAll(".custom-button");
+// function changeText() {
+//   const CustomBTN = document.querySelectorAll(".custom-button");
 
-  for (let i = 0; i < CustomBTN.length; i++) {
-    console.log(" CustomBTN[i]", CustomBTN[i]);
+//   for (let i = 0; i < CustomBTN.length; i++) {
+//     CustomBTN[i].innerText = "clicked";
 
-    // document.querySelector(".custom-button").innerText = "clicked";
-  }
+//     console.log(" CustomBTN[i]", CustomBTN[i]);
+//   }
+// }
+
+// chatgpt method
+
+const customBTN = document
+  .querySelectorAll(".custom-button")
+  .forEach((button) => {
+    button.addEventListener("click", function () {
+      changeText(this);
+    });
+  });
+
+function changeText(button) {
+  button.innerText = "clicked";
 }
+
+// function ScrollToTop() {
+//   window.scrollTo(0, 0);
+// }
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+});

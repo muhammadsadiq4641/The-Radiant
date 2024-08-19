@@ -36,3 +36,45 @@ h3 {
 .hero-wrapper {
   min-height: calc(100vh - 85px);
 }
+
+.swapBTN {
+  transition: 0.5s;
+}
+
+/* .scrollTop {
+  transition: all 0.4s ease;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.to-top {
+  transition: all 0.4s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+.join-div {
+  height: calc(100vh - 20vh);
+  background-size: 1200px;
+
+  @media (max-width: 800px) {
+    background-size: 900px;
+    height: 70vh;
+  }
+}
