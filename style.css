@@ -78,3 +78,7 @@ html {
     height: 70vh;
   }
 }
+
+.custom-button{
+  transition: 0.5s;
+}

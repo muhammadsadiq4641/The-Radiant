@@ -81,7 +81,8 @@ function closeSidebar() {
 //   }
 // }
 
-// chatgpt method
+
+// zzzz
 
 const customBTN = document
   .querySelectorAll(".custom-button")
